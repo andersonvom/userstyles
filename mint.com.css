@@ -1,0 +1,76 @@
+@-moz-document domain(mint.com) {
+  /* ===== Global ===== */
+  .securityLinks,
+  #trust
+  {
+    display: none;
+  }
+  .navbar-header {
+    padding-top: 0 !important;
+    padding-bottom: 1em !important;
+  }
+  .navbar-right {
+    height: 1.5em !important;
+  }
+
+
+  /* ===== Login Page ===== */
+  #loginAd {
+    display: none !important;
+  }
+  .panel-flexible-inside.panels-flexible-new-inside {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .top-level li a {
+    color: black !important;
+  }
+
+
+  /* ===== Overview ===== */
+  .HypothesisTestingView, /* top ad */
+  .AdviceView,
+  .CreditScoreView,
+  .module.module-alert.empty, /* empty sections in the main body */
+  .moduleAccount:not(.open), /* empty investment types start closed */
+  .accounts-adv /* ads inside accounts column */
+  {
+    display: none !important;
+  }
+  .module-content.accounts {
+    display: flex;
+    flex-direction: column-reverse; /* move net worth to the top of side bar */
+  }
+  .totals .net-worth {
+    color: #0ac775 !important; /* paint net worth green */
+  }
+  .column-main .module {
+    margin-bottom: 0.5em !important; /* reduce margin between components in the main body */
+  }
+
+
+  /* ===== Transactions Page ===== */
+  #advice-top-container,
+  tr.deals
+  {
+    display: none;
+  }
+  .kill-9 li ul li {
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+  }
+  .kill-9 li ul li:nth-child(even) { background: #fafafa }
+  #transaction-list-body tr td {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+
+  /* ===== Investments Page ===== */
+  #ways_to_invest_control,
+  .column a.button,
+  .replace-with-iframe-below-header
+  {
+    display: none;
+  }
+}
