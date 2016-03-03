@@ -47,6 +47,9 @@
   .column-main .module {
     margin-bottom: 0.5em !important; /* reduce margin between components in the main body */
   }
+  .overviewPage .module { /* margin between accounts and trends */
+    margin: 0;
+  }
 
 
   /* ===== Transactions Page ===== */
