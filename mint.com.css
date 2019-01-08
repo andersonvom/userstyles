@@ -1,93 +1,17 @@
-@-moz-document domain(mint.intuit.com), domain(mint.com) {
-  /* ===== Global ===== */
-  .securityLinks,
-  #trust
+@-moz-document domain("mint.intuit.com") {
+  /* Overview */
+  .HypothesisTestingView,  /* Top ad */
+  .accounts-adv,           /* Sidebar: account type ad */
+  .CardView.adviceWidget,  /* Card: Suggested Offers */
+  .CardView.w2sWidget,     /* Card: Ways to Save */
+
+  /* Transactions */
+  #TopTxnOfferWidgetContainer,                      /* Top ad */
+  .promotions-personalized-offers-ui-single-offer,  /* Inline transaction ad */
+
+  /* Credit Score */
+  .UpsellCards             /* Card: Credit card suggestion (?) */
   {
-    display: none;
-  }
-  .navbar-header {
-    padding-top: 0 !important;
-    padding-bottom: 1em !important;
-  }
-  .navbar-right {
-    height: 1.5em !important;
-  }
-
-
-  /* ===== Login Page ===== */
-  #loginAd {
-    display: none !important;
-  }
-  .panel-flexible-inside.panels-flexible-new-inside {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox; /* 2011 (IE 10) */
-    display: flex;
-    /* move login box to top of the page */
-    -webkit-flex-direction: column-reverse;
-    -moz-flex-direction: column-reverse;
-    -spec-flex-direction: column-reverse;
-    flex-direction: column-reverse;
-  }
-  .top-level li a {
-    color: black !important;
-  }
-
-
-  /* ===== Overview ===== */
-  .HypothesisTestingView, /* top ad */
-  .AdviceView,
-  .CreditScoreView,
-  .module.module-alert.empty, /* empty sections in the main body */
-  .moduleAccount:not(.open), /* empty investment types start closed */
-  .accounts-adv /* ads inside accounts column */
-  {
-    display: none !important;
-  }
-  .module-content.accounts {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox; /* 2011 (IE 10) */
-    display: flex;
-    /* move net worth to the top of side bar */
-    -webkit-flex-direction: column-reverse;
-    -moz-flex-direction: column-reverse;
-    -spec-flex-direction: column-reverse;
-    flex-direction: column-reverse;
-  }
-  .totals .net-worth {
-    color: #0ac775 !important; /* paint net worth green */
-  }
-  .column-main .module {
-    margin-bottom: 0.5em !important; /* reduce margin between components in the main body */
-  }
-  .overviewPage .module { /* margin between accounts and trends */
-    margin: 0;
-  }
-
-
-  /* ===== Transactions Page ===== */
-  #advice-top-container,
-  tr.deals
-  {
-    display: none;
-  }
-  .kill-9 li ul li {
-    padding-top: 0.25em;
-    padding-bottom: 0.25em;
-  }
-  .kill-9 li ul li:nth-child(even) { background: #fafafa }
-  #transaction-list-body tr td {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-  }
-
-
-  /* ===== Investments Page ===== */
-  #ways_to_invest_control,
-  .column a.button,
-  .replace-with-iframe-below-header
-  {
-    display: none;
+  	display: none !important;
   }
 }
